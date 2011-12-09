@@ -27,18 +27,18 @@ public class LocationCommand extends AndroidRemoteCommand {
 		MyAndroidRemoteRequestFactory requestFactory = Util.getRequestFactory(
 				context, MyAndroidRemoteRequestFactory.class);
 
-		requestFactory
-				.androidCommandRequest()
-				.respondLocationCommand(getId(), location.getLatitude(),
-						location.getLongitude(), location.getTime())
-				.fire(new Receiver<AndroidCommandProxy>() {
-
-					@Override
-					public void onSuccess(AndroidCommandProxy arg0) {
-						
-
-					}
-				});
+//		requestFactory
+//				.androidCommandRequest()
+//				.respondLocationCommand(getId(), location.getLatitude(),
+//						location.getLongitude(), location.getTime())
+//				.fire(new Receiver<AndroidCommandProxy>() {
+//
+//					@Override
+//					public void onSuccess(AndroidCommandProxy arg0) {
+//						
+//
+//					}
+//				});
 	}
 
 	public void execute(final Context context) {

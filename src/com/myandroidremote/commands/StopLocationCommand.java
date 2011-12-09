@@ -45,8 +45,5 @@ public class StopLocationCommand extends AndroidRemoteCommand {
 		LocationManagerThread locationManagerThread = LocationManagerThread.getInstance(context);
 		locationManagerThread.stop();
 	}
-	
-
-	
 
 }

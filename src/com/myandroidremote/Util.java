@@ -223,4 +223,8 @@ public class Util {
     private static String getPackageName() {
         return Util.class.getPackage().getName();
     }
+    
+    public static int convertLatLng(double latLng) {
+    	return (int)(latLng * 1e6);
+    }
 }

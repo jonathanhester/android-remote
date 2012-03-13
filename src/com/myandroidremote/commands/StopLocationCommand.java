@@ -29,8 +29,8 @@ public class StopLocationCommand extends AndroidRemoteCommand {
 
 		requestFactory
 				.androidCommandRequest()
-				.respondLocationCommand(getId(), location.getLatitude(),
-						location.getLongitude(), location.getTime())
+				.respondLocationCommand(getId(), Util.convertLatLng(location.getLatitude()),
+						Util.convertLatLng(location.getLongitude()), location.getTime())
 				.fire(new Receiver<AndroidCommandProxy>() {
 
 					@Override
